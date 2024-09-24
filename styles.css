@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Body styling for the entire page */
+body {
+    display: flex; /* Centers content horizontally */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+    background-image: url('https://wallpaperaccess.com/full/671214.jpg'); /* Background image for the entire page */
+    background-size: cover; /* Ensures background covers the entire screen */
+    background-position: center; /* Centers the background image */
+    color: white; /* Default text color */
+    font-family: Arial, sans-serif; /* Default font family */
+    position: relative; /* Positions the body element relative to its normal position */
+}
+
+/* Styling for the page title (h1) */
+h1 {
+    position: absolute; /* Positions the title absolutely within the body */
+    top: 20px; /* 20 pixels from the top of the body */
+    left: 20px; /* 20 pixels from the left of the body */
+    font-size: 2.5em; /* Large font size for the title */
+    font-family: 'Bangers', cursive; /* Custom font for the title */
+    text-shadow: 2px 2px 4px #000; /* Adds a shadow effect to the text */
+    margin: 0; /* Removes default margin */
+}
+
+/* Container for the calculator and wins containers */
+.container {
+    display: flex; /* Displays child elements (containers) in a row */
+    justify-content: center; /* Centers the containers horizontally */
+    gap: 40px; /* Adds space between the containers */
+    width: 100%; /* Full width of the viewport */
+}
+
+/* Shared styling for both the calculator and wins containers */
+.calculator-container,
+.wins-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 30px; /* Padding inside the containers */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds a shadow around the containers */
+    width: 400px; /* Fixed width for the containers */
+    text-align: center; /* Centers text within the containers */
+}
+
+/* Sections within each container for input and results */
+.input-section,
+.result-section {
+    margin-bottom: 20px; /* Space below each section */
+}
+
+/* Action buttons section within the containers */
+.action-section {
+    display: flex; /* Displays child elements (buttons) in a row */
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Aligns the buttons vertically */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px; /* Space above the section */
+}
+
+/* Styling for all labels in the containers */
+label {
+    display: block; /* Labels take up full width of their parent */
+    margin: 10px 0 5px; /* Margin above and below the labels */
+    font-size: 1.2em; /* Font size for labels */
+}
+
+/* Styling for input fields and dropdowns in the containers */
+input[type="number"],
+select {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input fields */
+    margin-bottom: 10px; /* Space below the input fields */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners for the input fields */
+    font-size: 1em; /* Font size for the input text */
+    background-color: #333; /* Dark background for the input fields */
+    color: white; /* White text color for the input fields */
+}
+
+/* Styling for all buttons in the containers */
+button {
+    padding: 15px 30px; /* Padding inside the buttons */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1.2em; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Styling for the "Double Down" checkbox */
+#doubleDown {
+    transform: scale(1.2); /* Scales the checkbox size */
+}
+
+/* General paragraph styling in the containers */
+p {
+    font-size: 1.2em; /* Font size for paragraphs */
+    margin: 20px 0; /* Margin above and below paragraphs */
+    text-shadow: 1px 1px 2px #000; /* Adds shadow to the text */
+}

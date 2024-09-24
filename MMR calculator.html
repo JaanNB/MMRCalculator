@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMR Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MMR Calculator</h1>
+    <div class="container">
+        <!-- First Square -->
+        <div class="calculator-container">
+            <div class="input-section">
+                <label for="mmrInput">Current MMR:</label>
+                <input type="number" id="mmrInput" min="0">
+                <label for="targetRank">Target Rank:</label>
+                <select id="targetRank">
+                    <option value="Herald">Herald</option>
+                    <option value="Guardian">Guardian</option>
+                    <option value="Crusader">Crusader</option>
+                    <option value="Archon">Archon</option>
+                    <option value="Legend">Legend</option>
+                    <option value="Ancient">Ancient</option>
+                    <option value="Divine">Divine</option>
+                    <option value="Immortal">Immortal</option>
+                </select>
+            </div>
+            <div class="action-section">
+                <button id="calculateWinsButton">Calculate Wins</button>
+                <label for="doubleDown" id="doubleDownLabel">Double Down:</label>
+                <input type="checkbox" id="doubleDown">
+            </div>
+            <p>Wins to Target Rank: <span id="winsToTarget">0</span></p>
+        </div>
+
+        <!-- Second Square -->
+        <div class="wins-container">
+            <div class="result-section">
+                <p>Estimated MMR: <span id="estimatedMMR">0</span></p>
+                <p>Rank: <span id="rank">Herald</span></p>
+                <p>Wins: <span id="winCount">0</span></p>
+                <p>Losses: <span id="loseCount">0</span></p>
+                <button id="winButton">Win</button>
+                <button id="loseButton">Lose</button>
+            </div>
+            <div class="reset-section">
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
